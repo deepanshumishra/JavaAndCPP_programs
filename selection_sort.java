@@ -6,21 +6,19 @@ public class SelectionSort
    {  
        int size, i, j, temp;  
        int arr[] = new int[50];  
-       Scanner scan = new Scanner(System.in);  
-         
+       Scanner scan = new Scanner(System.in);         
        System.out.print("Enter Array Size : ");  
-       size = scan.nextInt();  
-         
+       size = scan.nextInt();         
        System.out.print("Enter Array Elements : ");  
        for(i=0; i<size; i++)  
        {  
            arr[i] = scan.nextInt();  
        }  
          
-       System.out.print("Sorting Array using Selection Sort Technique..\n");  
+       System.out.print("Sorting Array using Selection Sort Technique\n");  
        for(i=0; i<size; i++)  
        {  
-           for(j=i+1; j<size; j++)  
+           for(j=i+1;j<size;j++)  
            {  
                if(arr[i] > arr[j])  
                {  
