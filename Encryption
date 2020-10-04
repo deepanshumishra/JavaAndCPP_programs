@@ -1,33 +1,54 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.util.Scanner;
+
 
 public class Solution {
 
-    // Complete the encryption function below.
-    static String encryption(String s) {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Scanner scan= new Scanner(System.in);
+		String s= scan.next();
+		int wid,len;
+		int l=s.length();
+		double f=Math.sqrt(l);
+		int test=(int)f;
+		if(test*test==l){
+			wid=test;
+			len=test;
+		}else{
+		wid=test;
+		len=test+1;
+		if(wid*len<l)
+			wid++;
+		}
+		int a=0;
+		char arr[][] = new char[wid][len];
+		for(int i=0;i<wid;i++){
+			for(int j=0;j<len;j++){
+				if(a==s.length())
+					arr[i][j]=' ';
+				else
+				arr[i][j]=s.charAt(a++);
+				
+			}
+			if(a==s.length())
+				break;
+		}
+		String temp="";
+		boolean go=false;
+		for(int i=0;i<len;i++){
+			for(int j=0;j<wid;j++){
+				if(!(arr[j][i]==' ')){
+				temp=temp+arr[j][i];
+				go=true;
+				}
+			}
+			if(go)
+				temp=temp+" ";
+			go=false;
+		}
+		System.out.println(temp);
+	}
 
-
-    }
-
-    private static final Scanner scanner = new Scanner(System.in);
-
-    public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
-        String s = scanner.nextLine();
-
-        String result = encryption(s);
-
-        bufferedWriter.write(result);
-        bufferedWriter.newLine();
-
-        bufferedWriter.close();
-
-        scanner.close();
-    }
 }
