@@ -1,0 +1,25 @@
+Why performance analysis?
+There are many important things that should be taken care of, like user friendliness, modularity, security, maintainability, etc. Why to worry about performance?
+The answer to this is simple, we can have all the above things only if we have performance. So performance is like currency through which we can buy all the above things. Another reason for studying performance is – speed is fun!
+To summarize, performance == scale. Imagine a text editor that can load 1000 pages, but can spell check 1 page per minute OR an image editor that takes 1 hour to rotate your image 90 degrees left OR … you get it. If a software feature can not cope with the scale of tasks users need to perform – it is as good as dead.
+
+
+Given two algorithms for a task, how do we find out which one is better?
+One naive way of doing this is – implement both the algorithms and run the two programs on your computer for different inputs and see which one takes less time. There are many problems with this approach for analysis of algorithms.
+1) It might be possible that for some inputs, first algorithm performs better than the second. And for some inputs second performs better.
+2) It might also be possible that for some inputs, first algorithm perform better on one machine and the second works better on other machine for some other inputs.
+
+Why performance analysis?
+There are many important things that should be taken care of, like user friendliness, modularity, security, maintainability, etc. Why to worry about performance?
+The answer to this is simple, we can have all the above things only if we have performance. So performance is like currency through which we can buy all the above things. Another reason for studying performance is – speed is fun!
+To summarize, performance == scale. Imagine a text editor that can load 1000 pages, but can spell check 1 page per minute OR an image editor that takes 1 hour to rotate your image 90 degrees left OR … you get it. If a software feature can not cope with the scale of tasks users need to perform – it is as good as dead.
+
+
+Given two algorithms for a task, how do we find out which one is better?
+One naive way of doing this is – implement both the algorithms and run the two programs on your computer for different inputs and see which one takes less time. There are many problems with this approach for analysis of algorithms.
+1) It might be possible that for some inputs, first algorithm performs better than the second. And for some inputs second performs better.
+2) It might also be possible that for some inputs, first algorithm perform better on one machine and the second works better on other machine for some other inputs.
+
+Does Asymptotic Analysis always work?
+Asymptotic Analysis is not perfect, but that’s the best way available for analyzing algorithms. For example, say there are two sorting algorithms that take 1000nLogn and 2nLogn time respectively on a machine. Both of these algorithms are asymptotically same (order of growth is nLogn). So, With Asymptotic Analysis, we can’t judge which one is better as we ignore constants in Asymptotic Analysis.
+Also, in Asymptotic analysis, we always talk about input sizes larger than a constant value. It might be possible that those large inputs are never given to your software and an algorithm which is asymptotically slower, always performs better for your particular situation. So, you may end up choosing an algorithm that is Asymptotically slower but faster for your software.
