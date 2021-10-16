@@ -1,3 +1,5 @@
+//Not a Code 
+//Just theory copied from somewhere
 Why performance analysis?
 There are many important things that should be taken care of, like user friendliness, modularity, security, maintainability, etc. Why to worry about performance?
 The answer to this is simple, we can have all the above things only if we have performance. So performance is like currency through which we can buy all the above things. Another reason for studying performance is – speed is fun!
