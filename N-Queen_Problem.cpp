@@ -2,8 +2,7 @@
 
 
 #include <iostream>
-include <iostream>
-#include <iostream>
+
 using namespace std;
 
 bool isSafe(int board[][10],int i,int j,int n){
